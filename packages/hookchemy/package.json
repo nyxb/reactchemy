@@ -1,0 +1,54 @@
+{
+  "name": "hookchemy",
+  "version": "0.0.0",
+  "description": "🟣 The perfect fusion of React Hooks and reusable components to optimize your project.",
+  "author": "Dennis Ollhoff <contact@nyxb.xyz>",
+  "license": "MIT",
+  "homepage": "https://💻nyxb.ws",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxb/hookchemy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nyxb/hookchemy/issues"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "hooks"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Happy hacking\" && 💙"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0  || ^17.0.0 || ^18.2.0",
+    "react-dom": "^16.8.0  || ^17.0.0 || ^18.2.0"
+  },
+  "devDependencies": {
+    "@nyxb/eslint-config": "^0.1.2",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@turbo/gen": "^1.10.5",
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.13",
+    "date-fns": "^2.30.0",
+    "eslint": "^8.43.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
