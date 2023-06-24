@@ -1,3 +1,6 @@
 {
-  "extends": ["@nyxb"]
+  "extends": ["@nyxb"],
+  "rules": {
+    "n/prefer-global/buffer": 0
+  }
 }

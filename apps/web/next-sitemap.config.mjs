@@ -5,19 +5,19 @@
 
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: 'https://hookchemy.nyxb.zip',
-  changefreq: 'daily',
-  priority: 0.7,
-  generateIndexSitemap: false,
-  generateRobotsTxt: true,
-  robotsTxtOptions: {
-    policies: [
-      {
-        userAgent: '*',
-        allow: '/',
-      },
-    ],
-  },
+   siteUrl: 'https://hookchemy.nyxb.zip',
+   changefreq: 'daily',
+   priority: 0.7,
+   generateIndexSitemap: false,
+   generateRobotsTxt: true,
+   robotsTxtOptions: {
+      policies: [
+         {
+            userAgent: '*',
+            allow: '/',
+         },
+      ],
+   },
 }
 
 export default config
