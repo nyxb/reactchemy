@@ -1,26 +1,44 @@
 {
   "name": "workspace",
   "version": "0.0.0",
+  "private": true,
   "description": "🟣 The perfect fusion of React Hooks and reusable components to optimize your project.",
   "author": "Dennis Ollhoff <contact@nyxb.xyz>",
-  "private": true,
   "license": "MIT",
-  "homepage": "https://💻nyxb.ws",
   "funding": "https://github.com/sponsors/nyxb",
+  "homepage": "https://💻nyxb.ws",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nyxb/hookchemy.git"
   },
-  "scripts": {
-    "test": "echo \"Happy hacking\" && 💙"
-  },
-  "devDependencies": {
-    "dynot": "^0.1.8"
-  },
-  "files": [],
   "keywords": [
     "typescript",
     "react",
     "hooks"
-  ]
+  ],
+  "files": [],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "lint": "turbo run lint",
+    "types-check": "turbo run types-check",
+    "test:coverage": "zx ./scripts/coverage.mjs",
+    "update-readme": "zx ./scripts/updateReadme.mjs",
+    "copy-hooks": "rm -rf ./apps/web/generated && zx ./scripts/copyHooks.mjs",
+    "gen-hook": "turbo gen hook",
+    "gen-util": "turbo gen util",
+    "gen-component": "turbo gen component",
+    "clean:modules": "turbo clean:modules"
+  },
+  "dependencies": {
+    "react-spring": "^9.7.1"
+  },
+  "devDependencies": {
+    "dynot": "^0.1.8",
+    "turbo": "^1.10.5",
+    "zx": "^7.2.2"
+  }
 }

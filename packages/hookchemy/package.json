@@ -19,19 +19,21 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
     }
   },
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Happy hacking\" && 💙"
+    "build": "pnpm build:cjs && pnpm build:esm",
+    "build:cjs": "tsc -p tsconfig.build.json --module commonjs --outDir dist/cjs --target es5",
+    "build:esm": "tsc -p tsconfig.build.json --module esNext --outDir dist/esm --target es6",
+    "clean:modules": "rm -rf node_modules"
   },
   "peerDependencies": {
     "react": "^16.8.0  || ^17.0.0 || ^18.2.0",
@@ -44,6 +46,7 @@
     "@turbo/gen": "^1.10.5",
     "@types/node": "^20.3.1",
     "@types/react": "^18.2.13",
+    "consolji": "^0.1.5",
     "date-fns": "^2.30.0",
     "eslint": "^8.43.0",
     "react": "^18.2.0",
