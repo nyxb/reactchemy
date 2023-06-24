@@ -3,19 +3,18 @@
 import Script from 'next/script'
 
 export function Analytics() {
-  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+   const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 
-  if (!GA_MEASUREMENT_ID) {
-    return null
-  }
+   if (!GA_MEASUREMENT_ID)
+      return null
 
-  return (
+   return (
     <>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
+        strategy='afterInteractive'
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id='google-analytics' strategy='afterInteractive'>
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
@@ -24,5 +23,5 @@ export function Analytics() {
         `}
       </Script>
     </>
-  )
+   )
 }
