@@ -8,7 +8,7 @@ import { camelToKebabCase, isDemoFile, isHookFile } from './utils.mjs'
 // 1. Imperative script that updates the hook list in the README file.
 ////////////////////////////////////////////////////////////////////////
 
-const srcDir = path.resolve('./packages/hookchemy/src')
+const srcDir = path.resolve('./packages/reactchemy/src')
 const readmeFile = path.resolve('./README.md')
 
 const markdown = fs
@@ -43,7 +43,7 @@ catch (err) {
 
 function createUrl(filename) {
    const pathname = camelToKebabCase(filename)
-   return `https://hookchemy/react-hook/${pathname}`
+   return `https://reactchemy/react-hook/${pathname}`
 }
 
 function hasDemo(name) {

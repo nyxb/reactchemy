@@ -11,7 +11,7 @@ export default async function IntroductionPage() {
           heading={'Getting started'}
         />
         <H2>Install</H2>
-        <Mdx source={Buffer.from('```bash\nnpm i hookchemy\n```')} />
+        <Mdx source={Buffer.from('```bash\nnpm i reactchemy\n```')} />
       </div>
     </main>
    )

@@ -23,7 +23,7 @@ export function generateMetadata(props: {
       return {}
 
    const title = post.name
-   const description = `Discover how to use ${post.name} from hookchemy`
+   const description = `Discover how to use ${post.name} from reactchemy`
    const url = siteConfig.url + post.href
    const imageUrl = `https://via.placeholder.com/1200x630.png/007ACC/fff/?text=${title}`
    return {

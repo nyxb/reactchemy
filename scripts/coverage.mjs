@@ -4,7 +4,7 @@ import { fs, path } from 'zx'
 
 import { isHookFile } from './utils.mjs'
 
-const hookDir = path.resolve('./packages/hookchemy/src')
+const hookDir = path.resolve('./packages/reactchemy/src')
 const hooks = fs.readdirSync(hookDir).filter(isHookFile)
 const testFileRegex = new RegExp('\.test\.ts$')
 let hasTestCount = 0

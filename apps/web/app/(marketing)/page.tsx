@@ -17,7 +17,7 @@ const features: Feature[] = [
       icon: Icons.zap,
       title: 'Lightweight',
       content:
-      'hookchemy is a tiny library without any dependencies, ensuring a lean and efficient solution.',
+      'reactchemy is a tiny library without any dependencies, ensuring a lean and efficient solution.',
    },
    {
       icon: Icons.unplug,
@@ -54,7 +54,7 @@ const features: Feature[] = [
 async function getGitHubStars(): Promise<string | null> {
    try {
       const response = await fetch(
-         'https://api.github.com/repos/nyxb/hookchemy',
+         'https://api.github.com/repos/nyxb/reactchemy',
          {
             headers: {
                Accept: 'application/vnd.github+json',
@@ -158,7 +158,7 @@ export default async function IndexPage() {
             Proudly Open Source
           </h2>
           <p className='max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
-          hookchemy is open source and powered by open source software.{' '}
+          reactchemy is open source and powered by open source software.{' '}
             <br /> The code is available on{' '}
             <Link
               href={siteConfig.links.github}

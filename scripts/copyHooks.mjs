@@ -4,7 +4,7 @@ import { fs, path } from 'zx'
 
 import { isHookFile } from './utils.mjs'
 
-const hooksDir = path.resolve('./packages/hookchemy/src/hooks')
+const hooksDir = path.resolve('./packages/reactchemy/src/hooks')
 const outputDir = path.resolve('./apps/web/generated')
 
 ////////////////////////////////////////////////////////////////////////
@@ -91,8 +91,8 @@ function copyFile({ source, dest, useSandbox, toMarkdown }) {
          data = data
             .split('\n')
             .map(line => line
-               .replace('from \'../../\'', 'from \'hookchemy\'')
-               .replace(`from './${name}'`, 'from \'hookchemy\''),
+               .replace('from \'../../\'', 'from \'reactchemy\'')
+               .replace(`from './${name}'`, 'from \'reactchemy\''),
             )
             .join('\n')
 

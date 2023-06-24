@@ -9,7 +9,7 @@
   "homepage": "https://💻nyxb.ws",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nyxb/hookchemy.git"
+    "url": "git+https://github.com/nyxb/reactchemy.git"
   },
   "keywords": [
     "typescript",

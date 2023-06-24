@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-import { useIsMounted } from 'hookchemy'
+import { useIsMounted } from 'reactchemy'
 
 import { cn } from '@/lib/utils'
 
