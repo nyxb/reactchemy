@@ -1,0 +1,6 @@
+{
+   "extends": ["@nyxb"],
+   "rules": {
+      "prefer-spread": 0
+   }
+}
