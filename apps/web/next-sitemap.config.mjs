@@ -5,7 +5,7 @@
 
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-   siteUrl: 'https://hookchemy.nyxb.zip',
+   siteUrl: 'https://reactchemy.com',
    changefreq: 'daily',
    priority: 0.7,
    generateIndexSitemap: false,

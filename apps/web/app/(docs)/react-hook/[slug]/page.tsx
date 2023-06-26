@@ -2,23 +2,23 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import { DocsPageHeader } from '@/components/docs-page-header'
-import { DocsPager } from '@/components/paper'
+import { DocsHookPager } from '@/components/hookPaper'
 import { H2, Mdx } from '@/components/remote-mdx'
 import type { TableOfContents } from '@/components/table-of-content'
 import {
    DashboardTableOfContents,
 } from '@/components/table-of-content'
 import { siteConfig } from '@/config/site'
-import { getPost, getPosts } from '@/lib/mdx'
+import { getHookPost, getHookPosts } from '@/lib/hookMdx'
 
 export async function generateStaticParams() {
-   return getPosts().map(post => ({ slug: post.slug }))
+   return getHookPosts().map(post => ({ slug: post.slug }))
 }
 
 export function generateMetadata(props: {
    params: { slug: string }
 }): Metadata {
-   const post = getPost(props.params.slug)
+   const post = getHookPost(props.params.slug)
    if (!post)
       return {}
 
@@ -53,7 +53,7 @@ export function generateMetadata(props: {
 }
 
 function PostLayout({ params }: { params: { slug: string } }) {
-   const post = getPost(params.slug)
+   const post = getHookPost(params.slug)
 
    if (!post)
       notFound()
@@ -80,7 +80,7 @@ function PostLayout({ params }: { params: { slug: string } }) {
         <H2 id='hook'>Hook</H2>
         <Mdx source={post.hook} />
         <hr className='my-4 md:my-6' />
-        <DocsPager slug={post.slug} />
+        <DocsHookPager slug={post.slug} />
       </div>
       <div className='hidden text-sm xl:block'>
         <div className='sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-10'>

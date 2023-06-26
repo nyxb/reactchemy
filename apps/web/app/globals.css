@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    --hover-color: 269, 100%, 59%;
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
 
@@ -37,6 +38,8 @@
   }
 
   .dark {
+    --hover-color2: 269, 100%, 59%;
+    --hover-color: 141, 100%, 58%;
     --background: 224 71% 4%;
     --foreground: 213 31% 91%;
 

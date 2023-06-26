@@ -10,8 +10,9 @@ export default async function IntroductionPage() {
           className='scroll-m-20'
           heading={'Getting started'}
         />
-        <H2>Install</H2>
-        <Mdx source={Buffer.from('```bash\nnpm i reactchemy\n```')} />
+        <H2>Welcome</H2>
+        <p>To get started, simply install the library with your favorite package manager and get started.</p>
+        <Mdx source={Buffer.from('```bash\n# npm \nnpm i reactchemy\n\n# pnpm\npnpm add reactchemy\n\n# yarn\nyarn add reactchemy\n```')} />
       </div>
     </main>
    )
