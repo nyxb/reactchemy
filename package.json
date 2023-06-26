@@ -27,7 +27,7 @@
     "types-check": "turbo run types-check",
     "test:coverage": "zx ./scripts/coverage.mjs",
     "update-readme": "zx ./scripts/updateReadme.mjs",
-    "copy-hooks": "rm -rf ./apps/web/generated && zx ./scripts/copyHooks.mjs",
+    "copy-docs": "rm -rf ./apps/web/generated && zx ./scripts/copyDocs.mjs",
     "gen-hook": "turbo gen hook",
     "gen-util": "turbo gen util",
     "gen-component": "turbo gen component",

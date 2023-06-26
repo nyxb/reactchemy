@@ -18,6 +18,8 @@ module.exports = {
       },
       extend: {
          colors: {
+            hoverColor2: 'hsl(var(--hover-color2))',
+            hoverColor: 'hsl(var(--hover-color))',
             border: 'hsl(var(--border))',
             input: 'hsl(var(--input))',
             ring: 'hsl(var(--ring))',
@@ -77,5 +79,8 @@ module.exports = {
          },
       },
    },
-   plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
+   plugins: [
+      require('tailwindcss-animate'),
+      require('@tailwindcss/typography'),
+   ],
 }

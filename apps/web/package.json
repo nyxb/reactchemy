@@ -6,7 +6,7 @@
     "build": "pnpm generate && next build && pnpm generate-sitemap",
     "clean": "rm -rf .next generated .turbo",
     "dev": "next dev",
-    "generate": "cd ../.. && pnpm copy-hooks && cd -",
+    "generate": "cd ../.. && pnpm copy-docs && cd -",
     "generate-sitemap": "rm -rf public/sitemap.xml public/robots.txt && next-sitemap --config ./next-sitemap.config.mjs",
     "lint": "next lint",
     "start": "next start"

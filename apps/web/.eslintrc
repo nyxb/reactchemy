@@ -1,6 +1,8 @@
 {
   "extends": ["@nyxb"],
   "rules": {
-    "n/prefer-global/buffer": 0
+    "n/prefer-global/buffer": 0,
+    "no-mixed-operators": 0,
+    "react/jsx-key": 0
   }
 }
