@@ -28,7 +28,7 @@
 
 <!-- DATA:START -->
 
-## Hooks
+## 🎣 Hooks
 
 - [`useBoolean()`](https://reactchemy/react-hook/use-boolean)
 - [`useBoop()`](https://reactchemy/react-hook/use-boop)
@@ -74,14 +74,14 @@
 - [`useUpdateEffect()`](https://reactchemy/react-hook/use-update-effect)
 - [`useWindowSize()`](https://reactchemy/react-hook/use-window-size)
 
-## Components
+## 🧩 Components
 
 - [`ClientOnly()`](https://reactchemy/react-component/-client-only)
 - [`InPortal()`](https://reactchemy/react-component/-in-portal)
 - [`ShiftBy()`](https://reactchemy/react-component/-shift-by)
 - [`VisuallyHidden()`](https://reactchemy/react-component/-visually-hidden)
 
-## Utils
+## 🛠️ Utils
 
 - [`debounce()`](https://reactchemy/react-util/debounce)
 - [`random()`](https://reactchemy/react-util/random)
@@ -93,7 +93,7 @@
 
 Thanks for wanting to contribute! It's more than welcome 🤗
 
-### Content changes
+### 🔄 Content changes
 
 Most content changes (like fixing a typo) can be made without cloning the repository.
 Simply locate the file you wish to change in the GitHub UI,
@@ -101,7 +101,7 @@ and click the little edit icon to make your change directly on the GitHub websit
 
 If you need to make any other substantial changes, then follow the project setup steps below.
 
-### Fork to submit a Pull Request (PR)
+### 🍴 Fork to submit a Pull Request (PR)
 
 Fork the repository, clone it and install.
 
@@ -111,7 +111,7 @@ cd reactchemy
 pnpm i
 ```
 
-### Create or update a new data
+### 📝 Create or update a new data
 
 ```bash
 # This command generates boilerplate for new component.
@@ -138,7 +138,7 @@ pnpm types-check
 pnpm test
 ```
 
-### How is a data structured?
+### ℹ️ How is a data structured?
 
 ```bash
 📂 ./packages/reactchemy
