@@ -31,8 +31,7 @@
     "gen-hook": "turbo gen hook",
     "gen-util": "turbo gen util",
     "gen-component": "turbo gen component",
-    "clean:modules": "turbo clean:modules",
-    "release": "turbo run release"
+    "clean:modules": "turbo clean:modules"
   },
   "dependencies": {
     "react-spring": "^9.7.1"
