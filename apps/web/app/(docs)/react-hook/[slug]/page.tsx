@@ -25,7 +25,7 @@ export function generateMetadata(props: {
    const title = post.name
    const description = `Discover how to use ${post.name} from reactchemy`
    const url = siteConfig.url + post.href
-   const imageUrl = '/og.png'
+   const imageUrl = 'https://raw.githubusercontent.com/nyxb/reactchemy/main/apps/web/public/og.png'
    return {
       title,
       description,
@@ -47,7 +47,7 @@ export function generateMetadata(props: {
          card: 'summary_large_image',
          title,
          description,
-         images: [`${siteConfig.url}/og.png`],
+         images: [imageUrl],
       },
    }
 }
