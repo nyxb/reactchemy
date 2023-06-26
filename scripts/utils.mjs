@@ -3,6 +3,16 @@ export function isHookFile(filename) {
    return hookRegex.test(filename)
 }
 
+export function isComponentFile(filename) {
+   const componentRegex = new RegExp('^[A-Z][a-zA-Z]*$')
+   return componentRegex.test(filename)
+}
+
+export function isUtilFile(filename) {
+   const utilRegex = new RegExp('^[a-z][a-zA-Z]*$')
+   return utilRegex.test(filename)
+}
+
 export function isDemoFile(filename) {
    const hookDemoRegex = new RegExp('^use[A-Z][a-zA-Z]*.demo.tsx$')
    return hookDemoRegex.test(filename)

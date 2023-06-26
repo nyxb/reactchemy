@@ -48,6 +48,8 @@ export interface Post {
   href: string // /react-hook/use-hook
   docs: Buffer // markdown raw
   hook: Buffer // markdown raw
+  component: Buffer // markdown raw
+  util: Buffer // markdown raw
   demo: Buffer // markdown raw
 }
 

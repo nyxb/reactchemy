@@ -1,6 +1,8 @@
 import type { MouseEvent, ReactNode } from 'react'
 import { animated } from 'react-spring'
+
 import { useBoop } from '../..'
+
 
 interface Props {
    children: ReactNode

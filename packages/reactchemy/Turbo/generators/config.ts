@@ -86,7 +86,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
             templateFile: 'templates/util/util.mdx.hbs',
          },
 
-         // Create the demo react component file
+         // Create the demo react util file
          {
             type: 'add',
             path: 'src/utils/{{lowerCase name}}/{{lowerCase name}}.demo.tsx',
@@ -134,6 +134,13 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
             type: 'add',
             path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.md',
             templateFile: 'templates/component/component.mdx.hbs',
+         },
+
+         // Create the demo react component file
+         {
+            type: 'add',
+            path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.demo.tsx',
+            templateFile: 'templates/component/component.demo.tsx.hbs',
          },
 
          // Update the global index file
