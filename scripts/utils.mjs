@@ -13,9 +13,19 @@ export function isUtilFile(filename) {
    return utilRegex.test(filename)
 }
 
-export function isDemoFile(filename) {
+export function isHookDemoFile(filename) {
    const hookDemoRegex = new RegExp('^use[A-Z][a-zA-Z]*.demo.tsx$')
    return hookDemoRegex.test(filename)
+}
+
+export function isComponentDemoFile(filename) {
+   const componentDemoRegex = new RegExp('^[A-Z][a-zA-Z]*.demo.tsx$')
+   return componentDemoRegex.test(filename)
+}
+
+export function isUtilDemoFile(filename) {
+   const utilDemoRegex = new RegExp('^[a-z][a-zA-Z]*.demo.tsx$')
+   return utilDemoRegex.test(filename)
 }
 
 export function camelToKebabCase(str) {
