@@ -30,10 +30,12 @@
     "dist"
   ],
   "scripts": {
+    "prepublishOnly": "nyxr build",
     "build": "pnpm build:cjs && pnpm build:esm",
     "build:cjs": "tsc -p tsconfig.build.json --module commonjs --outDir dist/cjs --target es5",
     "build:esm": "tsc -p tsconfig.build.json --module esNext --outDir dist/esm --target es6",
-    "clean:modules": "rm -rf node_modules"
+    "clean:modules": "rm -rf node_modules",
+    "release": "nyxlx changelogen@latest --release && pnpm publish"
   },
   "peerDependencies": {
     "react": "^16.8.0  || ^17.0.0 || ^18.2.0",
