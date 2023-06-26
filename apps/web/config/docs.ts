@@ -1,7 +1,19 @@
-import { getPosts } from '@/lib/mdx'
+import { getHookPosts } from '@/lib/hookMdx'
+import { getComponentPosts } from '@/lib/componentMdx'
+import { getUtilPosts } from '@/lib/utilMdx'
 import type { DocsConfig, NavItem } from '@/types'
 
-export const hookNavItems: NavItem[] = getPosts().map(post => ({
+export const hookNavItems: NavItem[] = getHookPosts().map(post => ({
+   title: post.name,
+   href: post.href,
+}))
+
+export const componentNavItems: NavItem[] = getComponentPosts().map(post => ({
+   title: post.name,
+   href: post.href,
+}))
+
+export const utilNavItems: NavItem[] = getUtilPosts().map(post => ({
    title: post.name,
    href: post.href,
 }))
@@ -26,6 +38,14 @@ export const docsConfig: DocsConfig = {
       {
          title: 'Hooks',
          items: hookNavItems,
+      },
+      {
+         title: 'Components',
+         items: componentNavItems,
+      },
+      {
+         title: 'Utils',
+         items: utilNavItems,
       },
    ],
 }
