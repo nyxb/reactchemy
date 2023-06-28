@@ -144,7 +144,7 @@ importers:
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@testing-library/react-hooks':
         specifier: ^8.0.1
-        version: 8.0.1(@types/react@18.2.13)(react-dom@18.2.0)(react-test-renderer@18.2.0)(react@18.2.0)
+        version: 8.0.1(@types/react@18.2.13)(react-dom@18.2.0)(react@18.2.0)
       '@turbo/gen':
         specifier: ^1.10.5
         version: 1.10.5(@types/node@20.3.1)(typescript@5.1.3)
@@ -154,9 +154,6 @@ importers:
       '@types/react':
         specifier: ^18.2.13
         version: 18.2.13
-      consolji:
-        specifier: ^0.1.5
-        version: 0.1.5
       date-fns:
         specifier: ^2.30.0
         version: 2.30.0
@@ -3251,7 +3248,7 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/react-hooks@8.0.1(@types/react@18.2.13)(react-dom@18.2.0)(react-test-renderer@18.2.0)(react@18.2.0):
+  /@testing-library/react-hooks@8.0.1(@types/react@18.2.13)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -3272,7 +3269,6 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-error-boundary: 3.1.4(react@18.2.0)
-      react-test-renderer: 18.2.0(react@18.2.0)
     dev: true
 
   /@testing-library/react@14.0.0(react-dom@18.2.0)(react@18.2.0):
@@ -4710,10 +4706,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
-
-  /consolji@0.1.5:
-    resolution: {integrity: sha512-dnjcLxJInSEUg5zWmT59wg1aULTuT7fHfizxYEZGfo8C1cyXkYfkVnq8evjUgfPKrKpXqMdrZASBfGLZaZYItw==}
-    dev: true
 
   /constant-case@2.0.0:
     resolution: {integrity: sha512-eS0N9WwmjTqrOmR3o83F5vW8Z+9R1HnVz3xmzT2PMFug9ly+Au/fxRWlEBSb6LcZwspSsEn9Xs1uw9YgzAg1EQ==}
@@ -9310,6 +9302,7 @@ packages:
 
   /react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
+    dev: false
 
   /react-konva@18.2.10(konva@9.2.0)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ohcX1BJINL43m4ynjZ24MxFI1syjBdrXhqVxYVDw2rKgr3yuS0x/6m1Y2Z4sl4T/gKhfreBx8KHisd0XC6OT1g==}
@@ -9464,6 +9457,7 @@ packages:
       object-assign: 4.1.1
       react: 18.2.0
       react-is: 18.2.0
+    dev: false
 
   /react-spring@9.7.1(@react-three/fiber@8.13.3)(konva@9.2.0)(react-dom@18.2.0)(react-konva@18.2.10)(react-native@0.72.0)(react-zdog@1.0.11)(react@18.2.0)(three@0.153.0)(zdog@1.1.3):
     resolution: {integrity: sha512-o2+r2DNQDVEuefiz33ZF76DPd/gLq3kbdObJmllGF2IUfv2W6x+ZP0gR97QYCSR4QLbmOl1mPKUBbI+FJdys2Q==}
@@ -9515,6 +9509,7 @@ packages:
       react-is: 18.2.0
       react-shallow-renderer: 16.15.0(react@18.2.0)
       scheduler: 0.23.0
+    dev: false
 
   /react-use-measure@2.1.1(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-nocZhN26cproIiIduswYpV5y5lQpSQS1y/4KuvUCjSKmw7ZWIS/+g3aFnX3WdBkyuGUtTLif3UTqnLLhbDoQig==}

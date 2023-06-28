@@ -1,5 +1,4 @@
 import { useRef } from 'react'
-import consolji from 'consolji'
 
 import { useEventListener } from '../..'
 
@@ -9,15 +8,15 @@ export default function Component() {
    const documentRef = useRef<Document>(document)
 
    const onScroll = (event: Event) => {
-      consolji.log('window scrolled!', event)
+      console.log('window scrolled!', event)
    }
 
    const onClick = (event: Event) => {
-      consolji.log('button clicked!', event)
+      console.log('button clicked!', event)
    }
 
    const onVisibilityChange = (event: Event) => {
-      consolji.log('doc visibility changed!', {
+      console.log('doc visibility changed!', {
          isVisible: !document.hidden,
          event,
       })

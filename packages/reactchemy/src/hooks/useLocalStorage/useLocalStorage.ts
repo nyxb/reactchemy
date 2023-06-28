@@ -7,7 +7,6 @@ import {
    useEffect,
    useState,
 } from 'react'
-import consolji from 'consolji'
 
 import { useEventCallback, useEventListener } from '../..'
 
@@ -103,7 +102,7 @@ function parseJSON<T>(value: string | null): T | undefined {
       return value === 'undefined' ? undefined : JSON.parse(value ?? '')
    }
    catch {
-      consolji.log('parsing error on', { value })
+      console.log('parsing error on', { value })
       return undefined
    }
 }

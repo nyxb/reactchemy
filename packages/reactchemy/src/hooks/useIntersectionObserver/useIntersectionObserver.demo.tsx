@@ -1,5 +1,4 @@
 import { useRef } from 'react'
-import consolji from 'consolji'
 
 import { useIntersectionObserver } from '../..'
 
@@ -8,7 +7,7 @@ function Section(props: { title: string }) {
    const entry = useIntersectionObserver(ref, {})
    const isVisible = !!entry?.isIntersecting
 
-   consolji.log(`Render Section ${props.title}`, { isVisible })
+   console.log(`Render Section ${props.title}`, { isVisible })
 
    return (
     <div

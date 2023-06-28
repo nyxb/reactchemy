@@ -1,5 +1,4 @@
 import { useRef } from 'react'
-import consolji from 'consolji'
 
 import { useOnClickOutside } from '../..'
 
@@ -8,12 +7,12 @@ export default function Component() {
 
    const handleClickOutside = () => {
       // Your custom logic here
-      consolji.log('clicked outside')
+      console.log('clicked outside')
    }
 
    const handleClickInside = () => {
       // Your custom logic here
-      consolji.log('clicked inside')
+      console.log('clicked inside')
    }
 
    useOnClickOutside(ref, handleClickOutside)
